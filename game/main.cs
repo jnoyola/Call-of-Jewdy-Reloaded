@@ -21,7 +21,7 @@
 //-----------------------------------------------------------------------------
 
 // Set the name of our application
-$appName = "Call of Jewdy Reloaded";
+$appName = "Full";
 
 // The directory it is run from
 $defaultGame = "scripts";
