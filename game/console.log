@@ -1,4 +1,4 @@
-//-------------------------- 4/7/2015 -- 17:23:30 -----
+//-------------------------- 4/7/2015 -- 18:04:32 -----
 Warning: forcing the Torque profiler thread to run only on cpu 1.
 Processor Init:
    Unknown x86 Compatible, ~2.39 Ghz
@@ -206,9 +206,9 @@ Accepted Mode:
 --Refresh Rate : 60
 --FSAA Level : 4
 --------------
-GFXPCD3D9Device::reset - depthstencil 6028c38 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 63f8c38 has 2 ref's
 --- Resetting D3D Device ---
-GFXPCD3D9Device::reset - depthstencil 6028ad8 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 63f8ad8 has 2 ref's
 --- Resetting D3D Device ---
 Executing art/gui/defaultGameProfiles.cs.
 Executing art/gui/playGui.gui.
@@ -507,9 +507,9 @@ Executing tools/shapeEditor/scripts/shapeEditorHints.ed.cs.
 Executing tools/shapeEditor/scripts/shapeEditorActions.ed.cs.
 Engine initialized...
 Win32Window::WindowProc - resetting device due to window size change.
-GFXPCD3D9Device::reset - depthstencil 602fe78 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 63ffe78 has 2 ref's
 --- Resetting D3D Device ---
-Started up in 6.80 seconds...
+Started up in 9.44 seconds...
 Window focus status changed: focus: 1
 ServerQuery:  start Querying master server 0
 No master servers found in this region, trying IP:128.12.13.32:3766.
@@ -526,16 +526,21 @@ There are no more master servers to try!
 ServerQuery:  done No master servers found. 0
 Activating DirectInput...
 Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
 ServerQuery:  start Querying master server 0
 No master servers found in this region, trying IP:128.12.13.32:3766.
 Requesting the server list from master server IP:128.12.13.32:3766 (2 tries left)...
 Received server list packet 1 of 1 from the master server (0 servers).
 ServerQuery:  done No servers found. 1
-ServerQuery:  start Querying master server 0
-No master servers found in this region, trying IP:128.12.13.32:3766.
-Requesting the server list from master server IP:128.12.13.32:3766 (2 tries left)...
-Received server list packet 1 of 1 from the master server (0 servers).
-ServerQuery:  done No servers found. 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
 Exporting server prefs...
 Starting multiplayer mode
 Binding server port to default IP
@@ -869,6 +874,12 @@ Mapping string: MsgConnectionError to index: 1
 Mapping string: MsgLoadInfo to index: 2
 Mapping string: MsgLoadDescripition to index: 3
 Sending heartbeat to master server [IP:128.12.13.32:3766]
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 6343658 has 2 ref's
+--- Resetting D3D Device ---
+DirectInput deactivated.
 Mapping string: MsgLoadInfoDone to index: 4
 Mapping string: MissionStartPhase1 to index: 5
 *** New Mission: levels/Empty Terrain.mis
@@ -904,58 +915,18 @@ Mapping string: MsgClientJoin to index: 13
 Mapping string: Welcome to the Torque demo app %1. to index: 14
 Mapping string: Visitor to index: 15
 *** Initial Control Object
+Activating DirectInput...
 *** Control Object Changed
-Mapping string: DarkBlue to index: 16
-Mapping string: cycleWeapon to index: 3
-Mapping string: lurker.png to index: 17
-Mapping string: MsgWeaponUsed to index: 18
-Mapping string: %1 selected. to index: 19
-Got Connect challenge Request from IP:10.31.5.52:64393
-Got Connect Request
-Connect request from: IP:10.31.5.52:64393
-CADD: 4547 IP:10.31.5.52:64393
-*** Sending mission load to client: levels/Empty Terrain.mis
-Mapping string: MissionStartPhase1Ack to index: 0
-Mapping string: MissionStartPhase2Ack to index: 1
+Mapping string: Teal to index: 16
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
 Sending heartbeat to master server [IP:128.12.13.32:3766]
-Got Connect challenge Request from IP:10.31.5.52:62091
-Got Connect Request
-Connect request from: IP:10.31.5.52:62091
-CADD: 4553 IP:10.31.5.52:62091
-*** Sending mission load to client: levels/Empty Terrain.mis
-Mapping string: MissionStartPhase1Ack to index: 0
-Client 4547 timed out.
-Issuing Disconnect packet.
-CDROP: 4547 IP:10.31.5.52:64393
-Mapping string: MsgClientDrop to index: 20
-Mapping string: %1 has left the game. to index: 21
-Mapping string: Visitor.1 to index: 22
-Mapping string: MissionStartPhase2Ack to index: 1
-Window focus status changed: focus: 0
-  Using background sleep time: 200
-DirectInput deactivated.
 Activating DirectInput...
-Window focus status changed: focus: 1
-Window focus status changed: focus: 0
-  Using background sleep time: 200
-DirectInput deactivated.
-Activating DirectInput...
-Window focus status changed: focus: 1
-Window focus status changed: focus: 0
-  Using background sleep time: 200
-DirectInput deactivated.
-Activating DirectInput...
-DirectInput deactivated.
-Activating DirectInput...
-Window focus status changed: focus: 1
-Client 4553 timed out.
-Issuing Disconnect packet.
-CDROP: 4553 IP:10.31.5.52:62091
-Mapping string: Visitor.2 to index: 23
 *** ENDING MISSION
 4408 -> deactivatePackages
 CDROP: 4410 IP:0.0.0.0:0
-Exporting server prefs...
 Exporting server prefs...
 Exporting client prefs
 Exporting server prefs
