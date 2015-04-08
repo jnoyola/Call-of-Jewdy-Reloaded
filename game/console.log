@@ -1,4 +1,4 @@
-//-------------------------- 4/7/2015 -- 02:58:31 -----
+//-------------------------- 4/7/2015 -- 17:23:30 -----
 Warning: forcing the Torque profiler thread to run only on cpu 1.
 Processor Init:
    Unknown x86 Compatible, ~2.39 Ghz
@@ -54,7 +54,6 @@ Binding server port to default IP
 UDP initialized on port 0
 Attempting to create GFX device: Intel(R) HD Graphics 4600 (D3D9) [\\.\DISPLAY1]
 Device created, setting adapter and enumerating modes
-Win32Window::setVideoMode - invoking curtain
    Cur. D3DDevice ref count=1
    Pix version detected: 3.000000
    Vert version detected: 3.000000
@@ -199,15 +198,17 @@ Using Basic Lighting
 
 
 --------------
-Attempting to set resolution to "1920 1080 true 32 60 4"
+Attempting to set resolution to "1024 768 false 32 60 4"
 Accepted Mode: 
---Resolution : 1920 1080
---Full Screen : Yes
+--Resolution : 1024 768
+--Full Screen : No
 --Bits Per Pixel : 32
 --Refresh Rate : 60
 --FSAA Level : 4
 --------------
-GFXPCD3D9Device::reset - depthstencil 6c68c38 has 2 ref's
+GFXPCD3D9Device::reset - depthstencil 6028c38 has 2 ref's
+--- Resetting D3D Device ---
+GFXPCD3D9Device::reset - depthstencil 6028ad8 has 2 ref's
 --- Resetting D3D Device ---
 Executing art/gui/defaultGameProfiles.cs.
 Executing art/gui/playGui.gui.
@@ -505,11 +506,40 @@ Executing tools/shapeEditor/scripts/shapeEditor.ed.cs.
 Executing tools/shapeEditor/scripts/shapeEditorHints.ed.cs.
 Executing tools/shapeEditor/scripts/shapeEditorActions.ed.cs.
 Engine initialized...
-Started up in 8.93 seconds...
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 602fe78 has 2 ref's
+--- Resetting D3D Device ---
+Started up in 6.80 seconds...
 Window focus status changed: focus: 1
+ServerQuery:  start Querying master server 0
+No master servers found in this region, trying IP:128.12.13.32:3766.
+Requesting the server list from master server IP:128.12.13.32:3766 (2 tries left)...
+Requesting the server list from master server IP:128.12.13.32:3766 (1 tries left)...
+ServerQuery:  update Retrying the master server... 0
+Window focus status changed: focus: 0
+  Using background sleep time: 200
 DirectInput deactivated.
+Requesting the server list from master server IP:128.12.13.32:3766 (0 tries left)...
+ServerQuery:  update Retrying the master server... 0
+Server list request to IP:128.12.13.32:3766 timed out.
+There are no more master servers to try!
+ServerQuery:  done No master servers found. 0
 Activating DirectInput...
+Window focus status changed: focus: 1
+ServerQuery:  start Querying master server 0
+No master servers found in this region, trying IP:128.12.13.32:3766.
+Requesting the server list from master server IP:128.12.13.32:3766 (2 tries left)...
+Received server list packet 1 of 1 from the master server (0 servers).
+ServerQuery:  done No servers found. 1
+ServerQuery:  start Querying master server 0
+No master servers found in this region, trying IP:128.12.13.32:3766.
+Requesting the server list from master server IP:128.12.13.32:3766 (2 tries left)...
+Received server list packet 1 of 1 from the master server (0 servers).
+ServerQuery:  done No servers found. 1
 Exporting server prefs...
+Starting multiplayer mode
+Binding server port to default IP
+UDP initialized on port 3800
 Executing core/art/datablocks/datablockExec.cs.
 Executing core/art/datablocks/camera.cs.
 Executing core/art/datablocks/markers.cs.
@@ -838,6 +868,7 @@ Mapping string: ServerMessage to index: 0
 Mapping string: MsgConnectionError to index: 1
 Mapping string: MsgLoadInfo to index: 2
 Mapping string: MsgLoadDescripition to index: 3
+Sending heartbeat to master server [IP:128.12.13.32:3766]
 Mapping string: MsgLoadInfoDone to index: 4
 Mapping string: MissionStartPhase1 to index: 5
 *** New Mission: levels/Empty Terrain.mis
@@ -861,21 +892,7 @@ Mapping string: MissionStartPhase3 to index: 7
 Client Replication Startup has Happened!
 fxFoliageReplicator - replicated client foliage for 0 objects
 *** Phase 3: Mission Lighting
-Lighting mission....
-
-Starting scene lighting...
-  Starting TGE based scene lighting...
-    Lighting with light #1 (TGE vector light)...
-      Lighting object 1 of 1...
-      Object lighting complete (0.000 seconds)
-  TGE based scene lighting complete (0.093 seconds)
-    Lighting object 1 of 1... TerrainBlock: (null)
-    = terrain lit in 0.796 seconds
-    Object lighting complete (0.811 seconds)
-Successfully saved mission lighting file: 'levels/Empty Terrain_cebe68cf.ml'
-Scene lighting complete (0.983 seconds)
-//-----------------------------------------------
-
+ Successfully loaded mission lighting file: 'levels/Empty Terrain_cebe68cf.ml'
 Mission lighting done
 Mapping string: MissionStartPhase3Ack to index: 2
 Mapping string: MissionStart to index: 8
@@ -888,23 +905,60 @@ Mapping string: Welcome to the Torque demo app %1. to index: 14
 Mapping string: Visitor to index: 15
 *** Initial Control Object
 *** Control Object Changed
-Mapping string: base to index: 16
+Mapping string: DarkBlue to index: 16
+Mapping string: cycleWeapon to index: 3
+Mapping string: lurker.png to index: 17
+Mapping string: MsgWeaponUsed to index: 18
+Mapping string: %1 selected. to index: 19
+Got Connect challenge Request from IP:10.31.5.52:64393
+Got Connect Request
+Connect request from: IP:10.31.5.52:64393
+CADD: 4547 IP:10.31.5.52:64393
+*** Sending mission load to client: levels/Empty Terrain.mis
+Mapping string: MissionStartPhase1Ack to index: 0
+Mapping string: MissionStartPhase2Ack to index: 1
+Sending heartbeat to master server [IP:128.12.13.32:3766]
+Got Connect challenge Request from IP:10.31.5.52:62091
+Got Connect Request
+Connect request from: IP:10.31.5.52:62091
+CADD: 4553 IP:10.31.5.52:62091
+*** Sending mission load to client: levels/Empty Terrain.mis
+Mapping string: MissionStartPhase1Ack to index: 0
+Client 4547 timed out.
+Issuing Disconnect packet.
+CDROP: 4547 IP:10.31.5.52:64393
+Mapping string: MsgClientDrop to index: 20
+Mapping string: %1 has left the game. to index: 21
+Mapping string: Visitor.1 to index: 22
+Mapping string: MissionStartPhase2Ack to index: 1
 Window focus status changed: focus: 0
   Using background sleep time: 200
-Win32Window::WindowProc - resetting device due to window size change.
-GFXPCD3D9Device::reset - depthstencil 6c68ad8 has 3 ref's
---- Resetting D3D Device ---
+DirectInput deactivated.
+Activating DirectInput...
 Window focus status changed: focus: 1
-==>exit();
-<input> (0): Unable to find function Exit
-Canvas
-==>quit();
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+Window focus status changed: focus: 0
+  Using background sleep time: 200
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
+Window focus status changed: focus: 1
+Client 4553 timed out.
+Issuing Disconnect packet.
+CDROP: 4553 IP:10.31.5.52:62091
+Mapping string: Visitor.2 to index: 23
 *** ENDING MISSION
 4408 -> deactivatePackages
 CDROP: 4410 IP:0.0.0.0:0
 Exporting server prefs...
+Exporting server prefs...
 Exporting client prefs
 Exporting server prefs
-Cur. D3DDevice ref count=3
+Cur. D3DDevice ref count=1
 GFXTextureObject::dumpActiveTOs - no active TOs to dump.
 GFXPrimitiveBuffer::dumpActivePBs - no currently active PBs to dump. You are A-OK!

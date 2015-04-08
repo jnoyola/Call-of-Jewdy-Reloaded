@@ -8,6 +8,6 @@ $Pref::Server::MaxChatLen = 120;
 $Pref::Server::MaxPlayers = 64;
 $Pref::Server::Name = "Torque 3D Server";
 $Pref::Server::Password = "";
-$Pref::Server::Port = 28000;
+$Pref::Server::Port = 3800;
 $Pref::Server::RegionMask = 2;
 $Pref::Server::TimeLimit = 20;

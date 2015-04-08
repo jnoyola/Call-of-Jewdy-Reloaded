@@ -559,6 +559,20 @@ function JoinServerDlg::join(%this)
    }
 }
 
+function directConnect(%ip)
+{
+   cancelServerQuery();
+   Canvas.setContent("LoadingGui");
+   LoadingProgress.setValue(1);
+   LoadingProgressTxt.setValue("WAITING FOR SERVER");
+   Canvas.repaint();
+
+   %conn = new GameConnection(ServerConnection);
+   %conn.setConnectArgs($pref::Player::Name);
+   %conn.setJoinPassword($Client::Password);
+   %conn.connect(%ip);
+}
+
 //----------------------------------------
 function JoinServerDlg::refresh(%this)
 {
