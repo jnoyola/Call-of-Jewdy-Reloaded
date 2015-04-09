@@ -55,3 +55,4 @@ game/scripts/client/prefs.cs
 game/scripts/client/config.cs
 **/prefs.cs
 **/*.uft
+game/screenshot*

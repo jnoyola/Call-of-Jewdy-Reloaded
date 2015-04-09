@@ -30,7 +30,7 @@ $pref::Player::defaultFov = 65;
 $pref::Player::zoomSpeed = 0;
 
 $pref::Net::LagThreshold = 400;
-$pref::Net::Port = 3800;
+$pref::Net::Port = 3766;
 
 $pref::HudMessageLogSize = 40;
 $pref::ChatHudLength = 1;
