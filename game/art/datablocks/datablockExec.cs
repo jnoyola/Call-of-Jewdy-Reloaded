@@ -38,6 +38,8 @@ exec("./triggers.cs");
 // Add a rigid example
 exec("./rigidShape.cs");
 
+exec("./physicsShape.cs");
+
 exec("./health.cs");
 
 // Load our supporting weapon datablocks, effects and such.  They must be

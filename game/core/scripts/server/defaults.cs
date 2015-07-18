@@ -23,7 +23,7 @@
 // List of master servers to query, each one is tried in order
 // until one responds
 $Pref::Server::RegionMask = 2;
-$pref::Master[0] = "2:128.12.13.32:3766";
+$pref::Master[0] = "2:master.garagegames.com:28002";
 
 // Information about the server
 $Pref::Server::Name = "Torque 3D Server";
@@ -42,7 +42,7 @@ $Pref::Server::ConnectionError =
 
 // The network port is also defined by the client, this value 
 // overrides pref::net::port for dedicated servers
-$Pref::Server::Port = 3766;
+$Pref::Server::Port = 28000;
 
 // If the password is set, clients must provide it in order
 // to connect to the server
