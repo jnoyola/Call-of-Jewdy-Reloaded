@@ -57,3 +57,5 @@ game/scripts/client/config.cs
 **/*.uft
 game/screenshot*
 **/*.cached.dts
+**/*.app
+**/*.app/**/*
